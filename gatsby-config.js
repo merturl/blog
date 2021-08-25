@@ -1,5 +1,3 @@
-
-
 module.exports = {
   siteMetadata: {
     title: `Merturl.kr`,
@@ -8,7 +6,7 @@ module.exports = {
     siteUrl: `https://merturl.kr`,
   },
   plugins: [
-    { 
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/blog`,
@@ -44,7 +42,7 @@ module.exports = {
             resolve: "gatsby-remark-autolink-headers",
             options: {
               icon: false,
-            }
+            },
           },
           `gatsby-remark-prismjs`,
         ],
@@ -77,13 +75,14 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: "gatsby-plugin-netlify-cms",
       options: {
         modulePath: `${__dirname}/src/cms/netlify.tsx`,
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-feed`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,

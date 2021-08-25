@@ -100,15 +100,14 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "YYYY년 MM월 DD일")
           title
           description
           tags
           thumbnail {
+            base
             childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
             }
           }
         }

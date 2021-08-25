@@ -14,11 +14,17 @@ collections:
     nested: { depth: 100 }
     media_folder: ""
     public_folder: ""
+    path: "{{slug}}/{{slug}}"
     fields:
       - { name: title, label: Title }
       - { name: date, label: Date, widget: datetime }
       - { name: description, label: Description }
       - { name: tags, label: Tags, widget: list }
-      - { name: thumbnail, label: Thumbnail, widget: image, required: false }
+      - {
+          name: thumbnail,
+          label: Thumbnail,
+          widget: image,
+          required: true,
+          media_folder: "images",
+        }
       - { name: body, label: Body, widget: markdown }
-    meta: { path: { widget: string, label: "Path", index_file: "index" } }

@@ -5,6 +5,7 @@ import { Link } from "gatsby";
 import { mediaQuery } from "../../lib/styles/media";
 import Thumbnail from "./Thumbnail";
 import Content from "./Content";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 type DataProps = {
   post: any;
@@ -45,18 +46,13 @@ const Preview = ({ post }: DataProps) => {
   const slug: string = post.fields.slug;
   const __html: string = post.frontmatter.description || post.excerpt;
   const date: string = post.frontmatter.date;
+  const image = getImage(post.frontmatter.thumbnail);
 
   return (
     <StyeldPreview>
       <StyledLink to={post.fields.slug}>
         {post.frontmatter.thumbnail && (
-          <Thumbnail
-            widthRatio={1.916}
-            heightRatio={1}
-            fluid={
-              post.frontmatter.thumbnail.childImageSharp.fluid as FluidObject
-            }
-          />
+          <GatsbyImage image={image} alt={post.frontmatter.thumbnail.base} />
         )}
       </StyledLink>
       <Content title={title} slug={slug} __html={__html} date={date} />
