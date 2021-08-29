@@ -59,7 +59,6 @@ const Content = ({ title, slug, date, __html }: DataProps) => {
         <StyeldTitle itemProp="headline">{title}</StyeldTitle>
         <StyledSection itemProp="description">
           <p
-            itemProp="description"
             dangerouslySetInnerHTML={{
               __html,
             }}
