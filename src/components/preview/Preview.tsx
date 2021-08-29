@@ -52,8 +52,8 @@ const Preview = ({ post }: DataProps) => {
         {post.frontmatter.thumbnail && (
           <GatsbyImage image={image} alt={post.frontmatter.thumbnail.base} />
         )}
-        <Content title={title} slug={slug} __html={__html} date={date} />
       </StyledLink>
+      <Content title={title} slug={slug} __html={__html} date={date} />
     </StyeldPreview>
   );
 };
