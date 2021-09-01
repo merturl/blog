@@ -1,16 +1,15 @@
 ---
-title: "1How can use Pandas?"
-date: "2019-05-04"
+title: 1How can use Pandas?
+date: 2019-05-04
 description: Hello World
-tags: ["python", "pandas"]
+tags:
+  - python
+  - pandas
 thumbnail: images/ponyo009.jpg
 ---
-
-###
-
 Create Pandas's DataFrame
 
-- list
+* list
 
 ```python
 import pandas as pd
@@ -27,4 +26,5 @@ student_df = pd.DataFrame(data=student_dict) # pd.DataFrame(student_dict)
 | 1   | 2     | john  | man    |
 | 2   | 3     | mike  | man    |
 
-- dictionary
+* dictionary
+* ![](limitedshockedkob-size_restricted.gif)
