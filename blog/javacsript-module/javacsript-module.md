@@ -39,7 +39,7 @@ Commonjs나 AMD 방식으로 작성된 Module들을 브라우져에서 실행하
 
 #### 참조
 
-[JavaScript 번들러로 본 조선시대 붕당의 이해 - 재그지그의 개발 블로그](https://ui.toast.com/fe-guide/ko_DEPENDENCY-MANAGE#commonjs)
-[의존성 관리 | TOAST UI :: Make Your Web Delicious!](https://www.jvandemo.com/a-10-minute-primer-to-javascript-modules-module-formats-module-loaders-and-module-bundlers/)
-[A 10 minute primer to JavaScript modules, module formats, module loaders and module bundlers](https://wormwlrm.github.io/2020/08/12/History-of-JavaScript-Modules-and-Bundlers.html)
+[JavaScript 번들러로 본 조선시대 붕당의 이해 - 재그지그의 개발 블로그](https://ui.toast.com/fe-guide/ko_DEPENDENCY-MANAGE#commonjs)\
+[의존성 관리 | TOAST UI :: Make Your Web Delicious!](https://www.jvandemo.com/a-10-minute-primer-to-javascript-modules-module-formats-module-loaders-and-module-bundlers/)\
+[A 10 minute primer to JavaScript modules, module formats, module loaders and module bundlers](https://wormwlrm.github.io/2020/08/12/History-of-JavaScript-Modules-and-Bundlers.html)\
 [모듈 소개](https://ko.javascript.info/modules-intro#ref-424)
