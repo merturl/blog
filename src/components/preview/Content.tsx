@@ -45,14 +45,36 @@ const StyeldTitle = styled.h4`
   margin-bottom: 0.25rem;
 `;
 
+const StyeldTags = styled.div`
+  padding-left: 1rem;
+  padding-right: 1rem;
+  span {
+    display: inline-flex;
+    font-size: 0.75rem;
+    color: white;
+    background-color: rgb(138, 43, 226);
+    border-radius: 0.75rem;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+  }
+`;
+
 type DataProps = {
   title: string;
   slug: string;
   date: string;
+  tags: string[];
   __html: string;
 };
 
-const Content = ({ title, slug, date, __html }: DataProps) => {
+const Content = ({ title, slug, date, tags, __html }: DataProps) => {
   return (
     <StyledLink to={slug}>
       <StyledContent>
@@ -65,6 +87,11 @@ const Content = ({ title, slug, date, __html }: DataProps) => {
           />
         </StyledSection>
       </StyledContent>
+      <StyeldTags>
+        {tags.map((tag, i) => (
+          <span key={i}>{tag}</span>
+        ))}
+      </StyeldTags>
       <StyledTime>{date}</StyledTime>
     </StyledLink>
   );

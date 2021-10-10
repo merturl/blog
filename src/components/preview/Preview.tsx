@@ -44,6 +44,7 @@ const Preview = ({ post }: DataProps) => {
   const slug: string = post.fields.slug;
   const __html: string = post.frontmatter.description || post.excerpt;
   const date: string = post.frontmatter.date;
+  const tags: string[] = post.frontmatter.tags;
   const image = getImage(post.frontmatter.thumbnail);
 
   return (
@@ -53,7 +54,13 @@ const Preview = ({ post }: DataProps) => {
           <GatsbyImage image={image} alt={post.frontmatter.thumbnail.base} />
         )}
       </StyledLink>
-      <Content title={title} slug={slug} __html={__html} date={date} />
+      <Content
+        title={title}
+        slug={slug}
+        __html={__html}
+        date={date}
+        tags={tags}
+      />
     </StyeldPreview>
   );
 };
