@@ -32,10 +32,11 @@ const StyeldPreview = styled.div`
     width: 100%;
     margin: 0 0 1rem 0;
   }
+  overflow: hidden;
 
-  &:hover {
+  img:hover {
     transition: 0.125s all ease-in;
-    transform: scale(1.05);
+    transform: scale(1.4);
   }
 `;
 
