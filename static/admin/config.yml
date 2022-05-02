@@ -1,5 +1,6 @@
 backend:
   name: github
+  branch: master
   repo: merturl/blog
 local_backend: true
 publish_mode: editorial_workflow
