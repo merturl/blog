@@ -10,7 +10,7 @@ thumbnail: images/ts_overloading.png
 
 Typescript에서 function과 method의 오버로딩을 지원하는데 사용하는 방법은 아래와 같다.
 
-```
+```typescript
 class SummonerRepository {
   constructor(private manager: EntityManager) {}
   save<T extends Summoner | Summoner[]>(
