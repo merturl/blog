@@ -8,6 +8,13 @@ tags:
 thumbnail: images/game_image.png
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IedIpfe2_80?si=MNsn952-NnsD8_Pe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IedIpfe2_80?si=MNsn952-NnsD8_Pe" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 
