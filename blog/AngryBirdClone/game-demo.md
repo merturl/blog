@@ -5,7 +5,8 @@ description: 포물선 운동의 원리를 이용하여 투사체를 던져서 �
 tags:
   - unity
   - C#
-thumbnail: images/thumbnail.png
+thumbnail: images/game_image.png
 ---
 
-[동영상 보기](AngryBirdClone.mp4)
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=IedIpfe2_80"
+frameborder="0" allowfullscreen></iframe>
